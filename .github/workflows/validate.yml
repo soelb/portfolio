@@ -16,4 +16,4 @@ jobs:
       - name: Run validation script
         run: |
           chmod +x .validate.sh
-          ./validate.sh
+          ../validate.sh
