@@ -1,0 +1,12 @@
+{
+  "systems": [
+    { "name": "API Server", "status": "✅ Operational" },
+    { "name": "Database", "status": "⚠️ Degraded Performance" },
+    { "name": "CI/CD", "status": "✅ Operational" }
+  ],
+  "tasks": [
+    { "title": "Fix production bug", "status": "in progress" },
+    { "title": "Write unit tests", "status": "pending" },
+    { "title": "Deploy update", "status": "done" }
+  ]
+}
