@@ -1,0 +1,19 @@
+name: Validate Code
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Run validation script
+        run: |
+          chmod +x .validate.sh
+          ./validate.sh
