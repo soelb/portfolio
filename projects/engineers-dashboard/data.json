@@ -1,12 +1,5 @@
-{
-  "systems": [
-    { "name": "Backend Server", "status": "✅ Running" },
-    { "name": "Database", "status": "🔄 Restarting" },
-    { "name": "API Gateway", "status": "🛑 Offline" }
-  ],
-  "tasks": [
-    { "title": "Deploy bug fix", "status": "done" },
-    { "title": "Write tests for API", "status": "in progress" },
-    { "title": "Update documentation", "status": "pending" }
-  ]
-}
+[
+  {"engineer": "Alice", "tickets_closed": 12, "hours_logged": 38},
+  {"engineer": "Bob", "tickets_closed": 9, "hours_logged": 41},
+  {"engineer": "Charlie", "tickets_closed": 14, "hours_logged": 36}
+]
