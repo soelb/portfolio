@@ -27,9 +27,8 @@ A central hub for my projects, tools, and developer journey
 
 ## 🚀 Projects
 
-## 🕰️ Command Time Travel 
-> Explore your shell history like a time traveler - last week, last month, or this day last year.
-[🔗 View Gist](https://gist.github.com/soelb/d59d4c7327d1a9ea8ac210b38f368f57)
+### 📜 [Command Time Travel](./projects/command-time-travel/README.md)
+> Explore your shell history like a time traveler – last week, last month, or this day last year.
 
 <!-- Add more projects below -->
 
