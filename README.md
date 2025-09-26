@@ -27,8 +27,15 @@ A central hub for my projects, tools, and developer journey
 
 ## 🚀 Projects
 
-### 📜 [Command Time Travel](./projects/command-time-travel/README.md)
+### ⏳ Command Time Travel
 > Explore your shell history like a time traveler – last week, last month, or this day last year.
+
+🔗 [View Gist](./projects/command-time-travel/README.md)
+
+### 📊 Engineer's Dashboard
+> A terminal-based dashboard that gives engineers a quick overview of system status and active tasks.
+
+🔗 [View Code](./projects/engineers-dashboard)
 
 <!-- Add more projects below -->
 
