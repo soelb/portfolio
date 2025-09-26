@@ -9,7 +9,7 @@ A central hub for my projects, tools, and developer journey
 
 ## 🧠 About Me
 
-- I don;t define myself as a developer - I build that that matter.
+- I don't define myself as a developer - I build that that matter.
 - Currently building a platform for engineers, analysts, project managers & more.
 - Passionate about becoming a **start-to-finish engineer** - from backend to frontend and everything in between.
 - Exploring tools that connect technical silos and bring ideas to life, end-to-end.
