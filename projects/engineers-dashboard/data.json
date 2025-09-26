@@ -1,12 +1,12 @@
 {
   "systems": [
-    { "name": "API Server", "status": "✅ Operational" },
-    { "name": "Database", "status": "⚠️ Degraded Performance" },
-    { "name": "CI/CD", "status": "✅ Operational" }
+    { "name": "Backend Server", "status": "✅ Running" },
+    { "name": "Database", "status": "🔄 Restarting" },
+    { "name": "API Gateway", "status": "🛑 Offline" }
   ],
   "tasks": [
-    { "title": "Fix production bug", "status": "in progress" },
-    { "title": "Write unit tests", "status": "pending" },
-    { "title": "Deploy update", "status": "done" }
+    { "title": "Deploy bug fix", "status": "done" },
+    { "title": "Write tests for API", "status": "in progress" },
+    { "title": "Update documentation", "status": "pending" }
   ]
 }
