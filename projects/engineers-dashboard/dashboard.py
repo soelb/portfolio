@@ -3,7 +3,7 @@
 import json
 
 # Load data
-with open('projects/engineers-dashboard/data.json', 'r') as file:
+with open('data.json', 'r') as file:
     data = json.load(file)
 
 # Display Dashboard
