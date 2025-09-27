@@ -18,9 +18,7 @@ This tool analyzes technical writing and detects complex or buzzword-heavy jargo
 2. Add your technical text into `sample.txt`
 3. Run the script:
 
-```bash
-python3 detector.py
-```
+
 ### 📸 Screenshot
 
 ![Jargon Detector Screenshot](screenshot.png)
