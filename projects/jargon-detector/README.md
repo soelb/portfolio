@@ -19,7 +19,7 @@ This tool analyzes technical writing and detects complex or buzzword-heavy jargo
 3. Run the script:
 
 ```bash
-
+python3 detector.py
 ```
 ### 📸 Screenshot
 
