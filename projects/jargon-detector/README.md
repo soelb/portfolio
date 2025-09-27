@@ -53,7 +53,7 @@ The Jargon Detector uses Natural Language Processing (NLP) techniques to identif
 ```
 ---
 
-## 💡 Features
+## Features
 
 * Detects complex jargon in technical writing
 
