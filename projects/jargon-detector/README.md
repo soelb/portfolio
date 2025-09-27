@@ -50,7 +50,7 @@ The Jargon Detector uses Natural Language Processing (NLP) techniques to identif
 * A predefined mapping of jargon terms to plain English equivalents.
 
 * Optionally, you can customize or expand this mapping for different domains.
-```
+
 ---
 
 ## Features
