@@ -38,7 +38,7 @@ python3 detector.py
 ```
 
 The tool will analyze the text and print suggestions for simplifying complex jargon directly in the terminal.
-
+```
 ---
 
 ## ⚙️ How It Works
@@ -66,11 +66,11 @@ The Jargon Detector uses Natural Language Processing (NLP) techniques to identif
 * Output displayed directly in the terminal
 
 ---
-```bash
 
 ### 📸 Screenshot
 
 ![Jargon Detector Screenshot](screenshot.png)
 
-```
+
+
 
