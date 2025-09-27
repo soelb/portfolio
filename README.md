@@ -37,11 +37,15 @@ A central hub for my projects, tools, and developer journey
 
 🔗 [View Code](./projects/engineers-dashboard)
 
-
 ### 🧹 Code Formatter  
 > A simple tool that takes in messy Python code and returns a clean, formatted version using AST.
 
 🔗 [View Code](./projects/code-formatter)
+
+### 🧪 Jargon Detector  
+> A tool that scans technical writing for complex jargon and suggests simpler alternatives using NLP.  
+
+[View Code](./projects/jargon-detector)
 
 <!-- Add more projects below -->
 
