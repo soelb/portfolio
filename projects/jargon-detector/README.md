@@ -18,13 +18,13 @@ python3 -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
 3. Install Dependencies
-
+```bash
 pip install -r requirements.txt
-
+```
 If you don't have a requirements.txt file, you can instead install manually:
-
+```bash
 pip install spacy
-
+```
 ---
 
 ## ⚙️ How It Works
