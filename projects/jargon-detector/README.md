@@ -8,21 +8,18 @@ This tool analyzes technical writing and detects complex or buzzword-heavy jargo
 Follow these steps to set up and run the Jargon Detector Locally:
 
 1. Clone the Repository
-
 ```bash
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name/projects/jargon-detector
-
+```
 2. Set up a Virtual Environment (optional but recommended)
-
 ```bash
 python3 -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
-
+```
 3. Install Dependencies
 
 pip install -r requirements.txt
-
 
 If you don't have a requirements.txt file, you can instead install manually:
 
