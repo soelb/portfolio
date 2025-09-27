@@ -41,12 +41,6 @@ The tool will analyze the text and print suggestions for simplifying complex jar
 
 ---
 
-## 🙋‍♀️ Contact
-
-Created by [@yourusername](https://github.com/yourusername) – feel free to reach out!
-
----
-
 ## ⚙️ How It Works
 
 The Jargon Detector uses Natural Language Processing (NLP) techniques to identify complex terms in a body of text. It relies on:
