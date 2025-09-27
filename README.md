@@ -42,7 +42,7 @@ A central hub for my projects, tools, and developer journey
 
 🔗 [View Code](./projects/code-formatter)
 
-### 🧪 Jargon Detector  
+### 🧪 Jargon Detector 
 > A tool that scans technical writing for complex jargon and suggests simpler alternatives using NLP.  
 
 [View Code](./projects/jargon-detector)
