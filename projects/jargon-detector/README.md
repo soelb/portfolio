@@ -24,4 +24,4 @@ python3 detector.py
 
 ### 📸 Screenshot
 
-![Jargon Detector Screenshot](screenshot.png)
+![Jargon Detector Screenshot](./screenshot.png)
