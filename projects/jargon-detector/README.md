@@ -38,7 +38,7 @@ python3 detector.py
 ```
 
 The tool will analyze the text and print suggestions for simplifying complex jargon directly in the terminal.
-```
+
 ---
 
 ## ⚙️ How It Works
