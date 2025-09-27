@@ -26,28 +26,18 @@ If you don't have a requirements.txt file, you can instead install manually:
 pip install spacy
 ```
 ---
-## 🔧 Usage
+## 🛠️ Usage
 
-1. Add your technical writing to `sample.txt`.
-2. Run the script:
+Once you've set up the project:
 
+Add your technical writing or documentation content to the sample.txt file.
+
+Run the script using the command:
 ```bash
 python3 detector.py
 ```
----
 
-#### 2. 🤝 **Contributing**
-> Let others know how to contribute to the project.
-
-```md
-## 🤝 Contributing
-
-Contributions are welcome!  
-If you find a bug or want to suggest improvements, feel free to open an issue or submit a pull request.
-
-## 📄 License
-
-This project is open-source and available under the [MIT License](LICENSE).
+The tool will analyze the text and print suggestions for simplifying complex jargon directly in the terminal.
 
 ---
 
