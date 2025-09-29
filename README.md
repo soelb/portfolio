@@ -25,7 +25,7 @@ A central hub for my projects, tools, and developer journey
 
 ---
 
-## 🚀 Projects
+## 📝 Projects
 
 ### ⏳ Command Time Travel
 > Explore your shell history like a time traveler – last week, last month, or this day last year.
@@ -37,12 +37,12 @@ A central hub for my projects, tools, and developer journey
 
 🔗 [View Code](./projects/engineers-dashboard)
 
-### ℹ Code Formatter  
+### 🧹 Code Formatter  
 > A simple tool that takes in messy Python code and returns a clean, formatted version using AST.
 
 🔗 [View Code](./projects/code-formatter)
 
-### 🧠 Jargon Detector 
+### 🕵🏽‍♀️ Jargon Detector 
 > This tool analyzes technical writing and highlights complex, buzzword-heavy jargon. It’s designed to make documentation clearer and more accessible — perfect for onboarding, technical handoffs, and user education.
 
 > Using Natural Language Processing (NLP) via [spaCy](https://spacy.io), the detector identifies advanced terminology and recommends simpler alternatives.
