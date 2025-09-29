@@ -37,7 +37,7 @@ A central hub for my projects, tools, and developer journey
 
 🔗 [View Code](./projects/engineers-dashboard)
 
-### 🧹 Code Formatter  
+### ℹ Code Formatter  
 > A simple tool that takes in messy Python code and returns a clean, formatted version using AST.
 
 🔗 [View Code](./projects/code-formatter)
