@@ -7,7 +7,7 @@ A central hub for my projects, tools, and developer journey
 
 ---
 
-## 🧠 About Me
+## 🗣️ About Me
 
 - I don't define myself as a developer - I build things that matter.
 - Currently building a platform for engineers, analysts, project managers & more.
