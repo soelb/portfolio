@@ -16,12 +16,9 @@ This tool analyzes technical writing and detects complex or buzzword-heavy jargo
 
 You can use the Jargon Detector in two ways:
 
-1. **Terminal** (Advanced Users):
-   - Run `detector.py` to scan a `.txt` file and highlight complex jargon.
-   - Example:
-     ```bash
-     python3 detector.py
-     ```
+```bash
+python3 detector.py
+```
 
 2. **Web App** (Beginner-Friendly):
    - Launch the Streamlit app:
@@ -62,5 +59,4 @@ Contributions are welcome!
 
 If you'd like to suggest improvements, add more jargon mappings, or enhance features — feel free to open an issue or submit a pull request.
 
-
-
+---
