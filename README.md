@@ -47,8 +47,6 @@ A central hub for my projects, tools, and developer journey
 
 > Using Natural Language Processing (NLP) via [spaCy](https://spacy.io), the detector identifies advanced terminology and recommends simpler alternatives.
 
-![Screenshot](screenshot.png)
-
 [View Code](./projects/jargon-detector)
 
 <!-- Add more projects below -->
