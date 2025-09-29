@@ -42,8 +42,12 @@ A central hub for my projects, tools, and developer journey
 
 🔗 [View Code](./projects/code-formatter)
 
-### 🧪 Jargon Detector 
-> A tool that scans technical writing for complex jargon and suggests simpler alternatives using NLP.  
+### 🧠 Jargon Detector 
+> This tool analyzes technical writing and highlights complex, buzzword-heavy jargon. It’s designed to make documentation clearer and more accessible — perfect for onboarding, technical handoffs, and user education.
+
+> Using Natural Language Processing (NLP) via [spaCy](https://spacy.io), the detector identifies advanced terminology and recommends simpler alternatives.
+
+![Screenshot](screenshot.png)
 
 [View Code](./projects/jargon-detector)
 
