@@ -1,5 +1,5 @@
 import spacy
-from fuzzywuzzy import fuzz
+from fuzzywuzzy import process
 
 # Load the English NLP model from spaCy
 nlp = spacy.load("en_core_web_sm")
@@ -24,34 +24,67 @@ JARGON_DB = {
     }
 }
 
-def find_closest_jargon(term):
-    for jargon_term in JARGON_DB:
-        ratio = fuzz.ratio(term.lower(), jargon_term.lower())
-        if ratio >= 85:  # You can adjust this threshold
-            return jargon_term
-    return None
+# Example dictionary of valid words (expand this for better coverage)
+VALID_WORDS = [
+    "organize", "projects", "which", "should", "doing", "once", "first", "feel",
+    "asynchronous", "microservices", "orchestration", "distributed", "tracing"
+]
+
+def correct_spelling(text):
+    corrected_words = []
+    for word in text.split():
+        if word.lower() in VALID_WORDS:
+            corrected_words.append(word)
+        else:
+            match, score = process.extractOne(word, VALID_WORDS)
+            if score > 80:  # threshold for confidence
+                corrected_words.append(match)
+            else:
+                corrected_words.append(word)
+    return " ".join(corrected_words)
 
 def analyze_text(text):
-    doc = nlp(text)
-    results = []
+    # Step 1: Correct spelling
+    corrected_text = correct_spelling(text)
 
-    for token in doc:
-        word = token.text.lower()
-        if word in JARGON_DB:
-            explanation = JARGON_DB[word]
-            results.append({
-                "term": word,
+    # Step 2: Grammar cleanup using spaCy
+    doc = nlp(corrected_text)
+    clean_sentences = []
+    for sent in doc.sents:
+        tokens = [token.text for token in sent]
+        clean_sentences.append(" ".join(tokens).replace(" ,", ",").replace(" .", "."))
+    grammar_fixed_text = " ".join(clean_sentences)
+
+    # Step 3: Replace jargon with simpler alternatives
+    final_text = grammar_fixed_text
+    jargon_hits = []
+    for jargon_term, explanation in JARGON_DB.items():
+        if jargon_term in final_text.lower():
+            jargon_hits.append({
+                "term": jargon_term,
                 "meaning": explanation["meaning"],
-                "simpler": explanation["simpler"],
-                "rewrite": text.replace(word, explanation["simpler"])
+                "simpler": explanation["simpler"]
             })
+            final_text = final_text.replace(jargon_term, explanation["simpler"])
 
-    return results
+    return {
+        "original": text,
+        "corrected_spelling": corrected_text,
+        "grammar_fixed": grammar_fixed_text,
+        "final_rewrite": final_text,
+        "jargon_replacements": jargon_hits
+    }
 
 # Optional test
 if __name__ == "__main__":
-    sample = "Our platform utilizes asynchronous microservices with robust orchestration and distributed tracing to ensure scalability."
+    sample = "i ned to orgnize my proejcts but idk wich shud go first an we utilize asynchronous microservices with robust orchestration."
     output = analyze_text(sample)
 
-    for item in output:
-        print(f"{item['term']} → {item['simpler']} ({item['meaning']})")
+    print("Original:", output["original"])
+    print("Corrected spelling:", output["corrected_spelling"])
+    print("Grammar fixed:", output["grammar_fixed"])
+    print("Final rewrite:", output["final_rewrite"])
+    if output["jargon_replacements"]:
+        print("\nJargon replacements made:")
+        for item in output["jargon_replacements"]:
+            print(f"{item['term']} → {item['simpler']} ({item['meaning']})")
