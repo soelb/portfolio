@@ -57,7 +57,7 @@ def analyze_text(text):
 
 # Optional test
 if __name__ == "__main__":
-    sample = "We use async microservices and leverge orchestration for distributd tracing."
+    sample = "Our platform utilizes asynchronous microservices with robust orchestration and distributed tracing to ensure scalability."
     output = analyze_text(sample)
 
     for item in output:
