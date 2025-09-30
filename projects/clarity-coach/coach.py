@@ -1,30 +1,52 @@
-# coach.py
+import spacy
 
-"""
-Clarity Coach:
-Explains why certain technical terms may be confusing and provides simpler alternatives.
-"""
+# Load the English NLP model from spaCy
+nlp = spacy.load("en_core_web_sm")
 
-JARGON_EXPLAINER = {
-    "orchestration": {
-        "explanation": "Often sounds like a buzzword — just means coordinating tasks or services.",
-        "replacement": "coordination"
-    },
+# Define your jargon dictionary
+JARGON_DB = {
     "asynchronous": {
-        "explanation": "Many people don’t understand async — it just means things happen without waiting in line.",
-        "replacement": "non-blocking"
+        "meaning": "Not happening at the same time",
+        "simpler": "non-blocking",
     },
-    "observability": {
-        "explanation": "It's a fancy way to say 'seeing what's going on inside a system.'",
-        "replacement": "monitoring"
+    "microservices": {
+        "meaning": "Small, independent components that work together",
+        "simpler": "small services",
     },
-    "containerized": {
-        "explanation": "Technical term from DevOps — just means packaged into a portable format.",
-        "replacement": "packaged"
+    "orchestration": {
+        "meaning": "Coordinated management of services or tasks",
+        "simpler": "coordination",
+    },
+    "distributed tracing": {
+        "meaning": "Tracking events across systems or services",
+        "simpler": "system tracking",
     }
 }
 
-def explain_term(term):
-    lower = term.lower()
-    return JARGON_EXPLAINER.get(lower, None)
 
+def analyze_text(text):
+    doc = nlp(text)
+    results = []
+
+    for chunk in doc.noun_chunks:
+        phrase = chunk.text.lower()
+
+        if phrase in JARGON_DB:
+            explanation = JARGON_DB[phrase]
+            results.append({
+                "term": chunk.text,
+                "meaning": explanation["meaning"],
+                "simpler": explanation["simpler"],
+                "rewrite": text.replace(chunk.text, explanation["simpler"])
+            })
+
+    return results
+
+
+# Test it from CLI (optional)
+if __name__ == "__main__":
+    sample = "We use asynchronous microservices and leverage orchestration for distributed tracing."
+    output = analyze_text(sample)
+
+    for item in output:
+        print(f"{item['term']} → {item['simpler']} ({item['meaning']})")
