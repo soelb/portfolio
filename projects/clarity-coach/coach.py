@@ -35,22 +35,15 @@ def analyze_text(text):
     doc = nlp(text)
     results = []
 
-    for chunk in doc.noun_chunks:
-        phrase = chunk.text.lower()
-        match = None
-
-        if phrase in JARGON_DB:
-            match = phrase
-        else:
-            match = find_closest_jargon(phrase)
-
-        if match:
-            explanation = JARGON_DB[match]
+    for token in doc:
+        word = token.text.lower()
+        if word in JARGON_DB:
+            explanation = JARGON_DB[word]
             results.append({
-                "term": chunk.text,
+                "term": word,
                 "meaning": explanation["meaning"],
                 "simpler": explanation["simpler"],
-                "rewrite": text.replace(chunk.text, explanation["simpler"])
+                "rewrite": text.replace(word, explanation["simpler"])
             })
 
     return results
