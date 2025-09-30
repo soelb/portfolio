@@ -1,4 +1,5 @@
 import spacy
+from fuzzywuzzy import fuzz
 
 # Load the English NLP model from spaCy
 nlp = spacy.load("en_core_web_sm")
@@ -23,6 +24,12 @@ JARGON_DB = {
     }
 }
 
+def find_closest_jargon(term):
+    for jargon_term in JARGON_DB:
+        ratio = fuzz.ratio(term.lower(), jargon_term.lower())
+        if ratio >= 85:  # You can adjust this threshold
+            return jargon_term
+    return None
 
 def analyze_text(text):
     doc = nlp(text)
@@ -30,9 +37,15 @@ def analyze_text(text):
 
     for chunk in doc.noun_chunks:
         phrase = chunk.text.lower()
+        match = None
 
         if phrase in JARGON_DB:
-            explanation = JARGON_DB[phrase]
+            match = phrase
+        else:
+            match = find_closest_jargon(phrase)
+
+        if match:
+            explanation = JARGON_DB[match]
             results.append({
                 "term": chunk.text,
                 "meaning": explanation["meaning"],
@@ -42,10 +55,9 @@ def analyze_text(text):
 
     return results
 
-
-# Test it from CLI (optional)
+# Optional test
 if __name__ == "__main__":
-    sample = "We use asynchronous microservices and leverage orchestration for distributed tracing."
+    sample = "We use async microservices and leverge orchestration for distributd tracing."
     output = analyze_text(sample)
 
     for item in output:
