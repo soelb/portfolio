@@ -15,6 +15,12 @@ from wordfreq import top_n_list
 from colorama import Fore, Style, init as color_init
 import difflib
 
+from google.auth.transport.requests import Request
+from google.oauth2.credentials import Credentials
+from google_auth_oauthlib.flow import InstalledAppFlow
+from googleapiclient.discovery import build
+
+
 # Exports
 from openpyxl import Workbook
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle
@@ -575,6 +581,26 @@ def main():
     parser.add_argument("--drive-folder", help="Google Drive folder ID.")
     parser.add_argument("--outdir", default="clarity_outputs", help="Output directory.")
     args = parser.parse_args()
+
+    # ===== Gmail Authentication Helper =====
+SCOPES = ["https://www.googleapis.com/auth/gmail.send"]
+
+def google_service(service_name, version):
+    creds = None
+    if os.path.exists("token.json"):
+        creds = Credentials.from_authorized_user_file("token.json", SCOPES)
+    if not creds or not creds.valid:
+        if creds and creds.expired and creds.refresh_token:
+            creds.refresh(Request())
+        else:
+            flow = InstalledAppFlow.from_client_secrets_file(
+                "credentials.json", SCOPES
+            )
+            creds = flow.run_local_server(port=0)
+        with open("token.json", "w") as token:
+            token.write(creds.to_json())
+    return build(service_name, version, credentials=creds)
+
 
     global SEND_EMAIL, UPLOAD_GDOC, SAVE_LOCAL, DRY_RUN, EMAIL_TO, EMAIL_FROM, DRIVE_FOLDER_ID
     if args.no_email: SEND_EMAIL = False
