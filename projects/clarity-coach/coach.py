@@ -141,7 +141,7 @@ def google_service(api, version):
             flow = InstalledAppFlow.from_client_secrets_file(
     "/workspaces/portfolio/projects/clarity-coach/credentials.json", SCOPES
 )
-            creds = flow.run_console()
+            creds = flow.run_local_server(port=0)
         with open("token.pickle", "wb") as token:
             pickle.dump(creds, token)
     return build(api, version, credentials=creds)
