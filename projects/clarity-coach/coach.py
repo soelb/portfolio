@@ -138,7 +138,9 @@ def google_service(api, version):
             except google.auth.exceptions.RefreshError:
                 creds = None
         if not creds:
-            flow = InstalledAppFlow.from_client_secrets_file("credentials.json", SCOPES)
+            flow = InstalledAppFlow.from_client_secrets_file(
+    "/workspaces/portfolio/projects/clarity-coach/credentials.json", SCOPES
+)
             creds = flow.run_local_server(port=0)
         with open("token.pickle", "wb") as token:
             pickle.dump(creds, token)
@@ -581,25 +583,6 @@ def main():
     parser.add_argument("--drive-folder", help="Google Drive folder ID.")
     parser.add_argument("--outdir", default="clarity_outputs", help="Output directory.")
     args = parser.parse_args()
-
-    # ===== Gmail Authentication Helper =====
-SCOPES = ["https://www.googleapis.com/auth/gmail.send"]
-
-def google_service(service_name, version):
-    creds = None
-    if os.path.exists("token.json"):
-        creds = Credentials.from_authorized_user_file("token.json", SCOPES)
-    if not creds or not creds.valid:
-        if creds and creds.expired and creds.refresh_token:
-            creds.refresh(Request())
-        else:
-            flow = InstalledAppFlow.from_client_secrets_file(
-                "credentials.json", SCOPES
-            )
-            creds = flow.run_local_server(port=0)
-        with open("token.json", "w") as token:
-            token.write(creds.to_json())
-    return build(service_name, version, credentials=creds)
 
 
     global SEND_EMAIL, UPLOAD_GDOC, SAVE_LOCAL, DRY_RUN, EMAIL_TO, EMAIL_FROM, DRIVE_FOLDER_ID
