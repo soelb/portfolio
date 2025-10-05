@@ -141,7 +141,7 @@ def google_service(api, version):
             flow = InstalledAppFlow.from_client_secrets_file(
     "/workspaces/portfolio/projects/clarity-coach/credentials.json", SCOPES
 )
-            creds = flow.run_local_server(port=0)
+            creds = flow.run_console()
         with open("token.pickle", "wb") as token:
             pickle.dump(creds, token)
     return build(api, version, credentials=creds)
@@ -608,10 +608,15 @@ def main():
                 print("No .txt files found in folder.")
                 return
             for fp in files:
+                # Skip previously generated output files to avoid recursion
+                if "clarity_output" in os.path.basename(fp):
+                    continue
+
                 with open(fp, "r", encoding="utf-8") as f:
                     text = f.read().strip()
                 print(f"\n=== Processing: {fp} ===")
                 process_text(text, outdir)
+
         else:
             # single text mode
             if not args.text:
