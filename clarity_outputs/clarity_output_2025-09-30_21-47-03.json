@@ -1,0 +1,80 @@
+{
+    "original": "i ned to orgnize my proejcts but idk wich shud go first an we utilize asynchronous microservices",
+    "polished": "I ned to organize my t But I do n't know wich should go first and we utilize non-blocking ices",
+    "changes": [
+        "orgnize → organize",
+        "proejcts → t",
+        "idk → I don't know",
+        "shud → should",
+        "microservices → ices",
+        "an we → and we",
+        "asynchronous → non-blocking"
+    ],
+    "categories": [
+        "spelling",
+        "spelling",
+        "slang",
+        "slang",
+        "spelling",
+        "grammar",
+        "jargon"
+    ],
+    "stats": {
+        "words_before": 17,
+        "words_after": 20,
+        "num_changes": 7,
+        "by_category": {
+            "spelling": 3,
+            "slang": 2,
+            "contraction": 0,
+            "grammar": 1,
+            "jargon": 1
+        }
+    },
+    "diff_pairs": [
+        [
+            "i",
+            "I"
+        ],
+        [
+            "ned to",
+            "ned to"
+        ],
+        [
+            "orgnize",
+            "organize"
+        ],
+        [
+            "my",
+            "my"
+        ],
+        [
+            "proejcts but idk",
+            "t But I do n't know"
+        ],
+        [
+            "wich",
+            "wich"
+        ],
+        [
+            "shud",
+            "should"
+        ],
+        [
+            "go first",
+            "go first"
+        ],
+        [
+            "an",
+            "and"
+        ],
+        [
+            "we utilize",
+            "we utilize"
+        ],
+        [
+            "asynchronous microservices",
+            "non-blocking ices"
+        ]
+    ]
+}

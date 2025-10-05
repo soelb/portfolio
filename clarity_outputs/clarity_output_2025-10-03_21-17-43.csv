@@ -1,0 +1,38 @@
+Category,Original Text,Corrected Text
+spelling,orgnize,organize
+spelling,proejcts,jc
+slang,idk,I don't know
+slang,shud,should
+spelling,microservices,micro
+spelling,non-blocking,kin
+spelling,[spelling],spelling
+spelling,orgnize,organize
+spelling,[spelling],spelling
+spelling,proejcts,jc
+spelling,[slang],slang
+slang,idk,I don't know
+spelling,[slang],slang
+slang,shud,should
+spelling,[spelling],spelling
+spelling,microservices,micro
+spelling,[grammar],grammar
+spelling,[jargon],jargon
+spelling,non-blocking,kin
+spelling,"""words_before"":",wor
+spelling,"17,",1
+spelling,"""words_after"":",fte
+spelling,"20,",0
+spelling,"""num_changes"":",cha
+spelling,"7,",7
+spelling,"""by_category"":",by
+spelling,"""spelling"":",spelling
+spelling,"3,",3
+spelling,"""slang"":",slang
+spelling,"2,",2
+spelling,"""contraction"":",contraction
+spelling,"0,",0
+spelling,"""grammar"":",grammar
+spelling,"1,",1
+spelling,"""jargon"":",jargon
+grammar,an we,and we
+jargon,asynchronous,non-blocking

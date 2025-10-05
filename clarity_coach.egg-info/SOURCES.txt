@@ -1,0 +1,9 @@
+README.md
+setup.py
+clarity_coach/__init__.py
+clarity_coach.egg-info/PKG-INFO
+clarity_coach.egg-info/SOURCES.txt
+clarity_coach.egg-info/dependency_links.txt
+clarity_coach.egg-info/entry_points.txt
+clarity_coach.egg-info/requires.txt
+clarity_coach.egg-info/top_level.txt

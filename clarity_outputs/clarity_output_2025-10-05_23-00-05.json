@@ -1,0 +1,68 @@
+{
+    "original": "i hav many projectz and idk wich should go first so i wanna fix that soon",
+    "polished": "I hav many project and I do n't know wich should go first So i want to fix that soon",
+    "changes": [
+        "projectz → project",
+        "idk → I don't know",
+        "wanna → want to"
+    ],
+    "categories": [
+        "spelling",
+        "slang",
+        "slang"
+    ],
+    "stats": {
+        "words_before": 16,
+        "words_after": 20,
+        "num_changes": 3,
+        "by_category": {
+            "spelling": 1,
+            "slang": 2,
+            "contraction": 0,
+            "grammar": 0,
+            "jargon": 0
+        }
+    },
+    "diff_pairs": [
+        [
+            "i",
+            "I"
+        ],
+        [
+            "hav many",
+            "hav many"
+        ],
+        [
+            "projectz",
+            "project"
+        ],
+        [
+            "and",
+            "and"
+        ],
+        [
+            "idk",
+            "I do n't know"
+        ],
+        [
+            "wich should go first",
+            "wich should go first"
+        ],
+        [
+            "so",
+            "So"
+        ],
+        [
+            "i",
+            "i"
+        ],
+        [
+            "wanna",
+            "want to"
+        ],
+        [
+            "fix that soon",
+            "fix that soon"
+        ]
+    ]
+}

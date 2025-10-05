@@ -1,0 +1,280 @@
+{
+    "original": "=== BEFORE ===\ni ned to orgnize my proejcts but idk wich shud go first an we utilize asynchronous microservices\n\n=== AFTER ===\nI ned to organize my ts But I do n't know wich should go first and we utilize non-blocking vices\n\n=== CHANGES ===\n- [spelling] orgnize → organize\n- [spelling] proejcts → ts\n- [slang] idk → I don't know\n- [slang] shud → should\n- [spelling] microservices → vices\n- [grammar] an we → and we\n- [jargon] asynchronous → non-blocking\n\n=== STATS ===\n{\n  \"words_before\": 17,\n  \"words_after\": 20,\n  \"num_changes\": 7,\n  \"by_category\": {\n    \"spelling\": 3,\n    \"slang\": 2,\n    \"contraction\": 0,\n    \"grammar\": 1,\n    \"jargon\": 1\n  }\n}",
+    "polished": "= = = BEFORE = = = i ned to organize my j But I do n't know wich should go first and we utilize non-blocking mic = = = AFTER = = = I ned to organize my ts But I do n't know wich should go first and we utilize locking vices = = = CHANGES = = = - spelling organize → organize - spelling j → ts - slang I do n't know → I do n't know - slang should → should - spelling mic → vices - grammar and we → and we - jargon non-blocking → locking = = = STATS = = = { ore 1 or 0 ang 7 ate { spelling 3 slang 2 contraction 0 grammar 1 jargon 1 } }",
+    "changes": [
+        "orgnize → organize",
+        "proejcts → j",
+        "idk → I don't know",
+        "shud → should",
+        "microservices → mic",
+        "non-blocking → locking",
+        "[spelling] → spelling",
+        "orgnize → organize",
+        "[spelling] → spelling",
+        "proejcts → j",
+        "[slang] → slang",
+        "idk → I don't know",
+        "[slang] → slang",
+        "shud → should",
+        "[spelling] → spelling",
+        "microservices → mic",
+        "[grammar] → grammar",
+        "[jargon] → jargon",
+        "non-blocking → locking",
+        "\"words_before\": → ore",
+        "17, → 1",
+        "\"words_after\": → or",
+        "20, → 0",
+        "\"num_changes\": → ang",
+        "7, → 7",
+        "\"by_category\": → ate",
+        "\"spelling\": → spelling",
+        "3, → 3",
+        "\"slang\": → slang",
+        "2, → 2",
+        "\"contraction\": → contraction",
+        "0, → 0",
+        "\"grammar\": → grammar",
+        "1, → 1",
+        "\"jargon\": → jargon",
+        "an we → and we",
+        "asynchronous → non-blocking"
+    ],
+    "categories": [
+        "spelling",
+        "spelling",
+        "slang",
+        "slang",
+        "spelling",
+        "spelling",
+        "spelling",
+        "spelling",
+        "spelling",
+        "spelling",
+        "spelling",
+        "slang",
+        "spelling",
+        "slang",
+        "spelling",
+        "spelling",
+        "spelling",
+        "spelling",
+        "spelling",
+        "spelling",
+        "spelling",
+        "spelling",
+        "spelling",
+        "spelling",
+        "spelling",
+        "spelling",
+        "spelling",
+        "spelling",
+        "spelling",
+        "spelling",
+        "spelling",
+        "spelling",
+        "spelling",
+        "spelling",
+        "spelling",
+        "grammar",
+        "jargon"
+    ],
+    "stats": {
+        "words_before": 109,
+        "words_after": 132,
+        "num_changes": 37,
+        "by_category": {
+            "spelling": 31,
+            "slang": 4,
+            "contraction": 0,
+            "grammar": 1,
+            "jargon": 1
+        }
+    },
+    "diff_pairs": [
+        [
+            "===",
+            "= = ="
+        ],
+        [
+            "BEFORE",
+            "BEFORE"
+        ],
+        [
+            "===",
+            "= = ="
+        ],
+        [
+            "i ned to",
+            "i ned to"
+        ],
+        [
+            "orgnize",
+            "organize"
+        ],
+        [
+            "my",
+            "my"
+        ],
+        [
+            "proejcts but idk",
+            "j But I do n't know"
+        ],
+        [
+            "wich",
+            "wich"
+        ],
+        [
+            "shud",
+            "should"
+        ],
+        [
+            "go first",
+            "go first"
+        ],
+        [
+            "an",
+            "and"
+        ],
+        [
+            "we utilize",
+            "we utilize"
+        ],
+        [
+            "asynchronous microservices ===",
+            "non-blocking mic = = ="
+        ],
+        [
+            "AFTER",
+            "AFTER"
+        ],
+        [
+            "===",
+            "= = ="
+        ],
+        [
+            "I ned to organize my ts But I do n't know wich should go first and we utilize",
+            "I ned to organize my ts But I do n't know wich should go first and we utilize"
+        ],
+        [
+            "non-blocking",
+            "locking"
+        ],
+        [
+            "vices",
+            "vices"
+        ],
+        [
+            "===",
+            "= = ="
+        ],
+        [
+            "CHANGES",
+            "CHANGES"
+        ],
+        [
+            "===",
+            "= = ="
+        ],
+        [
+            "-",
+            "-"
+        ],
+        [
+            "[spelling] orgnize",
+            "spelling organize"
+        ],
+        [
+            "→ organize -",
+            "→ organize -"
+        ],
+        [
+            "[spelling] proejcts",
+            "spelling j"
+        ],
+        [
+            "→ ts -",
+            "→ ts -"
+        ],
+        [
+            "[slang] idk",
+            "slang I do n't know"
+        ],
+        [
+            "→ I",
+            "→ I"
+        ],
+        [
+            "don't",
+            "do n't"
+        ],
+        [
+            "know -",
+            "know -"
+        ],
+        [
+            "[slang] shud",
+            "slang should"
+        ],
+        [
+            "→ should -",
+            "→ should -"
+        ],
+        [
+            "[spelling] microservices",
+            "spelling mic"
+        ],
+        [
+            "→ vices -",
+            "→ vices -"
+        ],
+        [
+            "[grammar] an",
+            "grammar and"
+        ],
+        [
+            "we → and we -",
+            "we → and we -"
+        ],
+        [
+            "[jargon] asynchronous",
+            "jargon non-blocking"
+        ],
+        [
+            "→",
+            "→"
+        ],
+        [
+            "non-blocking ===",
+            "locking = = ="
+        ],
+        [
+            "STATS",
+            "STATS"
+        ],
+        [
+            "===",
+            "= = ="
+        ],
+        [
+            "{",
+            "{"
+        ],
+        [
+            "\"words_before\": 17, \"words_after\": 20, \"num_changes\": 7, \"by_category\":",
+            "ore 1 or 0 ang 7 ate"
+        ],
+        [
+            "{",
+            "{"
+        ],
+        [
+            "\"spelling\": 3, \"slang\": 2, \"contraction\": 0, \"grammar\": 1, \"jargon\":",
+            "spelling 3 slang 2 contraction 0 grammar 1 jargon"
+        ],
+        [
+            "1 } }",
+            "1 } }"
+        ]
+    ]
+}

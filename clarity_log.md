@@ -1,0 +1,81 @@
+
+
+# Run 2025-10-05_22-36-50
+## Before
+i hav many projectz and idk wich should go first so i wanna fix that soon
+
+## After
+I hav many project and I do n't know wich should go first So i want to fix that soon
+
+## Changes
+- [spelling] projectz → project
+- [slang] idk → I don't know
+- [slang] wanna → want to
+
+## Stats
+{
+  "words_before": 16,
+  "words_after": 20,
+  "num_changes": 3,
+  "by_category": {
+    "spelling": 1,
+    "slang": 2,
+    "contraction": 0,
+    "grammar": 0,
+    "jargon": 0
+  }
+}
+
+
+# Run 2025-10-05_23-00-05
+## Before
+i hav many projectz and idk wich should go first so i wanna fix that soon
+
+## After
+I hav many project and I do n't know wich should go first So i want to fix that soon
+
+## Changes
+- [spelling] projectz → project
+- [slang] idk → I don't know
+- [slang] wanna → want to
+
+## Stats
+{
+  "words_before": 16,
+  "words_after": 20,
+  "num_changes": 3,
+  "by_category": {
+    "spelling": 1,
+    "slang": 2,
+    "contraction": 0,
+    "grammar": 0,
+    "jargon": 0
+  }
+}
+
+
+# Run 2025-10-05_23-08-55
+## Before
+i hav many projectz and idk wich should go first so i wanna fix that soon
+
+## After
+I hav many project and I do n't know wich should go first So i want to fix that soon
+
+## Changes
+- [spelling] projectz → project
+- [slang] idk → I don't know
+- [slang] wanna → want to
+
+## Stats
+{
+  "words_before": 16,
+  "words_after": 20,
+  "num_changes": 3,
+  "by_category": {
+    "spelling": 1,
+    "slang": 2,
+    "contraction": 0,
+    "grammar": 0,
+    "jargon": 0
+  }
+}

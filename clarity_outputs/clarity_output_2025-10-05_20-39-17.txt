@@ -1,0 +1,85 @@
+=== BEFORE ===
+=== BEFORE ===
+i ned to orgnize my proejcts but idk wich shud go first an we utilize asynchronous microservices
+
+=== AFTER ===
+I ned to organize my ts But I do n't know wich should go first and we utilize non-blocking vices
+
+=== CHANGES ===
+- [spelling] orgnize → organize
+- [spelling] proejcts → ts
+- [slang] idk → I don't know
+- [slang] shud → should
+- [spelling] microservices → vices
+- [grammar] an we → and we
+- [jargon] asynchronous → non-blocking
+
+=== STATS ===
+{
+  "words_before": 17,
+  "words_after": 20,
+  "num_changes": 7,
+  "by_category": {
+    "spelling": 3,
+    "slang": 2,
+    "contraction": 0,
+    "grammar": 1,
+    "jargon": 1
+  }
+}
+
+=== AFTER ===
+= = = BEFORE = = = i ned to organize my e But I do n't know wich should go first and we utilize non-blocking services = = = AFTER = = = I ned to organize my ts But I do n't know wich should go first and we utilize kin vices = = = CHANGES = = = - spelling organize → organize - spelling e → ts - slang I do n't know → I do n't know - slang should → should - spelling services → vices - grammar and we → and we - jargon non-blocking → kin = = = STATS = = = { ef 1 aft 0 change 7 at { spelling 3 slang 2 contraction 0 Grammar 1 jargon 1 } }
+
+=== CHANGES ===
+- [spelling] orgnize → organize
+- [spelling] proejcts → e
+- [slang] idk → I don't know
+- [slang] shud → should
+- [spelling] microservices → services
+- [spelling] non-blocking → kin
+- [spelling] [spelling] → spelling
+- [spelling] orgnize → organize
+- [spelling] [spelling] → spelling
+- [spelling] proejcts → e
+- [spelling] [slang] → slang
+- [slang] idk → I don't know
+- [spelling] [slang] → slang
+- [slang] shud → should
+- [spelling] [spelling] → spelling
+- [spelling] microservices → services
+- [spelling] [grammar] → grammar
+- [spelling] [jargon] → jargon
+- [spelling] non-blocking → kin
+- [spelling] "words_before": → ef
+- [spelling] 17, → 1
+- [spelling] "words_after": → aft
+- [spelling] 20, → 0
+- [spelling] "num_changes": → change
+- [spelling] 7, → 7
+- [spelling] "by_category": → at
+- [spelling] "spelling": → spelling
+- [spelling] 3, → 3
+- [spelling] "slang": → slang
+- [spelling] 2, → 2
+- [spelling] "contraction": → contraction
+- [spelling] 0, → 0
+- [spelling] "grammar": → grammar
+- [spelling] 1, → 1
+- [spelling] "jargon": → jargon
+- [grammar] an we → and we
+- [jargon] asynchronous → non-blocking
+
+=== STATS ===
+{
+  "words_before": 109,
+  "words_after": 132,
+  "num_changes": 37,
+  "by_category": {
+    "spelling": 31,
+    "slang": 4,
+    "contraction": 0,
+    "grammar": 1,
+    "jargon": 1
+  }
+}

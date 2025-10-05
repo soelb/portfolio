@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: clarity-coach
+Version: 1.0.0
+Summary: An intelligent text clarity assistant that detects spelling, grammar, and jargon issues and exports multi-format reports.
+Author: Soeleece Benjamin
+License: MIT
+Requires-Dist: spacy
+Requires-Dist: fuzzywuzzy
+Requires-Dist: python-docx
+Requires-Dist: pandas
+Requires-Dist: PyPDF2
+Requires-Dist: openpyxl
+Requires-Dist: pypandoc
+Dynamic: author
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: summary

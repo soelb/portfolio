@@ -1,0 +1,2 @@
+[console_scripts]
+clarity-coach = clarity_coach.__init__:main

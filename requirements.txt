@@ -1,0 +1,8 @@
+spacy
+fuzzywuzzy
+python-docx
+pandas
+PyPDF2
+openpyxl
+pypandoc
+setuptools
