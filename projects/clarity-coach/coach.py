@@ -43,27 +43,42 @@ CONTRACTIONS = {
     "doesnt": "doesn't", "didnt": "didn't", "aint": "ain't",
 }
 
+import re
+
 GRAMMAR_FIXES = {
-    " an we ": " and we ",
-    " an i ": " and I ",
-    " gonna ": " going to ",
-    " wanna ": " want to ",
-    " cuz ": " because ",
-    " ain't ": " is not ",
-    " could of ": " could have ",
-    " should of ": " should have ",
-    " would of ": " would have ",
-    " alot ": " a lot ",
-    " irregardless ": " regardless ",
-    " eachother ": " each other ",
-    " everyother ": " every other ",
-    " if you would ": " if you could ",
-    " if you will ": " if you would ",
-    " due to the fact that ": " because ",
-    " in order to ": " to ",
-    " at this point in time ": " now ",
-    " for all intensive purposes ": " for all intents and purposes "
+    r"\bain['’]t\b": "is not",
+    r"\bAin['’]t\b": "is not",
+    # (then keep the rest of your patterns)
+    r"\ban we\b": "and we",
+    r"\ban i\b": "and I",
+    r"\bgonna\b": "going to",
+    r"\bwanna\b": "want to",
+    r"\bcuz\b": "because",
+    r"\bcould of\b": "could have",
+    r"\bshould of\b": "should have",
+    r"\bwould of\b": "would have",
+    r"\balot\b": "a lot",
+    r"\birregardless\b": "regardless",
+    r"\beachother\b": "each other",
+    r"\beveryother\b": "every other",
+    r"\bdue to the fact that\b": "because",
+    r"\bin order to\b": "to",
+    r"\bat this point in time\b": "now",
+    r"\bfor all intensive purposes\b": "for all intents and purposes"
 }
+
+def apply_simple_fixes(text: str):
+    changes, cats = [], []
+    for pattern, repl in GRAMMAR_FIXES.items():
+        def _sub(m):
+            changes.append(f"{m.group(0)} → {repl}")
+            cats.append("grammar")
+            return repl
+        text = re.sub(pattern, _sub, text, flags=re.IGNORECASE)
+    return text, changes, cats
+
+
+CODE_LIKE_CHARS = set("{}[]()<>;:/\\'\"$#@_|~`^")
 
 nlp = spacy.load("en_core_web_sm")
 
