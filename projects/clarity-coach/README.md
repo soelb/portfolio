@@ -71,3 +71,9 @@ Clarity Coach helps technical teams write docs that are inclusive, clear, and ac
 
 ---
 
+⚠️ Security Note
+
+Real credentials (like API keys or OAuth secrets) should never be committed to the repository.
+For development, use the included credentials_template.json file and replace its placeholder values locally.
+The .gitignore file ensures that your private credentials.json stays protected and out of version control.
+
