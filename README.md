@@ -49,6 +49,15 @@ A central hub for my projects, tools, and developer journey
 
 [View Code](./projects/jargon-detector)
 
+### 🧠 Clarity Coach
+
+> An intelligent writing assistant that identifies jargon, explains complex terms, and rewrites text in plain, human-friendly English — perfect for teams writing technical documentation.
+
+> Using Natural Language Processing (NLP) via spaCy or Transformers, Clarity Coach improves clarity and inclusiveness in documentation.
+
+🔗 View Code
+
+
 <!-- Add more projects below -->
 
 ---
