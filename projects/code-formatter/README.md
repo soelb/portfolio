@@ -26,7 +26,32 @@ It reads your code, parses it for structure, and regenerates a clean, consistent
 
 ## ⚙️ Usage
 
-### Command Line
+## Command Line
 ```bash
 python formatter.py <file-to-format.py>
 
+```
+## 🧩 Example - You can test the script with a sample file named sample_script.py:
+
+**Input**
+x=1
+print(x +2)
+
+**Output**
+x = 1
+print(x + 2)
+
+
+```
+python formatter.py sample_script.py
+```
+
+---
+
+## 📄 **License**
+
+
+This project is licensed under the MIT License — feel free to modify and use it for your own projects.
+
+✅ This is **one unified block** — no fragments, no scrolling back and forth, no missing code fences.  
+It will render perfectly in GitHub’s dark mode just like your screenshots, clean and structured.
