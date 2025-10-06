@@ -1,0 +1,5 @@
+[
+  {"engineer": "Alice", "tickets_closed": 12, "hours_logged": 38},
+  {"engineer": "Bob", "tickets_closed": 9, "hours_logged": 41},
+  {"engineer": "Charlie", "tickets_closed": 14, "hours_logged": 36}
+]
