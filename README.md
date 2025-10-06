@@ -1,8 +1,7 @@
 
-A central hub for my projects, tools, and developer journey
 <h1 align="center">Hey there 👋 I'm Soeleece Benjamin</h1>
 <p align="center">
-  I buildd tools that make workflows simpler, faster, and more empowering. 
+  I buildd tools that make workflows simpler, faster, and more empowering. A central hub for my projects, tools, and dev journey.
 </p>
 
 ---
@@ -55,7 +54,7 @@ A central hub for my projects, tools, and developer journey
 
 > Using Natural Language Processing (NLP) via spaCy or Transformers, Clarity Coach improves clarity and inclusiveness in documentation.
 
-🔗 View Code
+[View Code](./projects/clarity-coach)
 
 
 <!-- Add more projects below -->
