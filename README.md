@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # 🧠 Clarity Coach — Your Jargon-Busting Writing Assistant
 
 Clarity Coach is an upgraded version of [Jargon Detector](../jargon-detector), designed to do more than just flag confusing terms.
@@ -131,4 +131,4 @@ A central hub for my projects, tools, and developer journey
 ## 📫 Connect with Me
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn--blue?logo=linkedin&style=social)](https://www.linkedin.com/in/https://www.linkedin.com/in/soeleece-benjamin-821532231/)
->>>>>>> ef4ee493b17b225e296e90d16e32c9c2155ca6af
+
