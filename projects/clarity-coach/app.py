@@ -1,5 +1,5 @@
 import streamlit as st
-from coach import analyze_text
+from clarity_coach.coach import analyze_text
 
 st.set_page_config(page_title="🧠 Clarity Coach", layout="centered")
 
