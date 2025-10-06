@@ -16,13 +16,20 @@ if st.button("🔍 Analyze"):
 
         if results:
             st.markdown("### ✨ Results")
-            for item in results:
-                st.markdown(f"""
-                - **Term**: `{item['term']}`  
-                  - 📖 *Meaning*: {item['meaning']}  
-                  - 🔁 *Simpler Alternative*: `{item['simpler']}`  
-                  - ✏️ *Suggested Rewrite*:  
-                    `{item['rewrite']}`
-                """)
+
+            st.markdown("**📝 Original Text:**")
+            st.info(results["original"])
+
+            st.markdown("**✅ Polished Version:**")
+            st.success(results["polished"])
+
+            st.markdown("**🔧 Changes Made:**")
+            for i, change in enumerate(results["changes"]):
+                cat = results["categories"][i] if i < len(results["categories"]) else "unspecified"
+                st.markdown(f"- [{cat}] {change}")
+
+            st.markdown("**📊 Stats:**")
+            stats = results["stats"]
+            st.json(stats)
         else:
             st.success("✅ No jargon detected. Great job!")
