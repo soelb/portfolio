@@ -1,18 +1,16 @@
 import ast
 import sys
 
-
 def format_code(code):
+    """Parses input Python code, formats it using AST, and returns the formatted output."""
     try:
-        # Parse the input code into an abstract syntax tree (AST)
         tree = ast.parse(code)
-
-        # Use AST to re-generate nicely formatted code
         formatted = ast.unparse(tree)
         return formatted
+    except SyntaxError as e:
+        return f"Syntax Error: {e}"
     except Exception as e:
         return f"Error formatting code: {e}"
-
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
@@ -26,8 +24,7 @@ if __name__ == "__main__":
             raw_code = file.read()
 
         formatted_code = format_code(raw_code)
-
-        print("\n🎯 Formatted Code:\n")
+        print("\n🧩 Formatted Code:\n")
         print(formatted_code)
 
     except FileNotFoundError:
