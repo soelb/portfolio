@@ -43,14 +43,14 @@ Paste in a chunk of technical writing (e.g., from a README or doc), and Clarity 
 
 ## 🚀 How to Run It (Locally or in Codespaces)
 
-**In GitHub Codespaces:**
+### In GitHub Codespaces:
+1. Open this repo in Codespaces  
+2. Open `projects/clarity-coach/projects/clarity-coach/app.py`  
+3. Press ▶️ **Run**, or run the following in the terminal:
 
-> 1. Open this repo in Codespaces  
-> 2. Open `projects/clarity-coach/app.py`  
-> 3. Press `Run` ▶️ or run:  
->    ```
->    streamlit run app.py
->    ```
+```bash
+cd projects/clarity-coach/projects/clarity-coach
+streamlit run app.py
 
 ---
 
