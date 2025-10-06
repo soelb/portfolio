@@ -52,8 +52,8 @@ Paste in a chunk of technical writing (e.g., from a README or doc), and Clarity 
 cd projects/clarity-coach/projects/clarity-coach
 streamlit run app.py
 
----
 
+```
 ## 📌 Roadmap
 
 - [ ] Build the core logic in `coach.py`
