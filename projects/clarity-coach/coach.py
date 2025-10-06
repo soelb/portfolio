@@ -173,14 +173,23 @@ def compute_simple_pairs(a: str, b: str):
 # Public API
 # -------------------------------------------------
 def analyze_text(text: str):
-    step1, ch1, cat1 = correct_spelling(text)
+    # Step 1: Apply grammar and slang fixes *first*
+    step0, ch0, cat0 = apply_simple_fixes(text)
+
+    # Step 2: Then spelling and contractions
+    step1, ch1, cat1 = correct_spelling(step0)
+
+    # Step 3: Sentence cleanup
     step2 = sentence_cleanup(step1)
-    step3, ch2, cat2 = smooth_grammar(step2)
-    final, ch3, cat3 = replace_jargon(step3)
 
-    changes = ch1 + ch2 + ch3
-    cats = cat1 + cat2 + cat3
+    # Step 4: Replace jargon
+    final, ch3, cat3 = replace_jargon(step2)
 
+    # Merge all change logs
+    changes = ch0 + ch1 + ch3
+    cats = cat0 + cat1 + cat3
+
+    # Stats
     stats = {
         "words_before": len(text.split()),
         "words_after": len(final.split()),
@@ -193,7 +202,8 @@ def analyze_text(text: str):
             "jargon": cats.count("jargon"),
         },
     }
-    # final cosmetic cleanup (remove stray spaces around hyphens and punctuation)
+
+    # Cleanup small cosmetic spacing issues
     final = (
         final.replace(" - ", "-")
              .replace(" ,", ",")
